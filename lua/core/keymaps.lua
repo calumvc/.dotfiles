@@ -21,3 +21,9 @@ keymap.set('n', '<leader>h', ':nohlsearch<Return>')
 
 -- shut window
 keymap.set('n', '<leader>q', ':q<Return>')
+
+-- vim terminal
+keymap.set('n', '<C-e>', ':terminal<Return>')
+
+-- leave vim terminal
+keymap.set('n', '<C-space>', '<C-w>N')
