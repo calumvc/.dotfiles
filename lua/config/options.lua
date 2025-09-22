@@ -35,3 +35,4 @@ opt.wrap = false
 -- search settings (when using / or ?)
 opt.ignorecase = true
 opt.smartcase = true
+
