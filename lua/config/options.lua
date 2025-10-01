@@ -36,3 +36,17 @@ opt.wrap = false
 opt.ignorecase = true
 opt.smartcase = true
 
+local signs = { Error = "E", Warn = "W", Hint = "H", Info = "I" }
+vim.diagnostic.config({
+  signs = {
+    text = {
+      [vim.diagnostic.severity.ERROR] = signs.Error,
+      [vim.diagnostic.severity.WARN] = signs.Warn,
+      [vim.diagnostic.severity.HINT] = signs.Hint,
+      [vim.diagnostic.severity.INFO] = signs.Info,
+    },
+  },
+  virtual_text = {
+    current_line = false,
+  },
+})
