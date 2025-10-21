@@ -20,7 +20,7 @@ return {
     end,
   },
 
-  { 
+  {
     'nvim-tree/nvim-tree.lua',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
     keys = {
@@ -67,17 +67,26 @@ return {
     end,
   },
 
-  { 'ronxvier/ymir.nvim',
+  { 'wadackel/vim-dogrun',
     config = function()
       -- theme
       vim.opt.background = "dark"
-      vim.cmd("colorscheme ymir")
+      vim.cmd("colorscheme dogrun")
     end,
   },
   { 'nvim-lua/plenary.nvim' },
   { 'nvim-telescope/telescope.nvim' },
 
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {
+    }
+  },
+
+
   -- completion
+
   {
     'hrsh7th/nvim-cmp',
     event = "InsertEnter",
