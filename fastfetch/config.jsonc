@@ -1,0 +1,91 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "type": "file",
+    "source": "~/.config/fastfetch/art.txt",
+    "padding": {
+      "top": 0,
+      "left": 0,
+    }
+  },
+  "modules": [
+    "break",
+    {
+      "type": "title",
+      "keyColor": "2",
+    },
+    "separator",
+    {
+      "type": "os",
+      "keyColor": "#2e0a0f",
+    },
+    {
+      "type": "command",
+      "key": "OS Age",
+      "keyColor": "#2e0a0f",
+      "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+    },
+    {
+      "type": "host",
+      "keyColor": "#9b394a",
+    },
+    {
+      "type": "kernel",
+      "keyColor": "#9b394a",
+    },
+    {
+      "type": "uptime",
+      "keyColor": "#523c64",
+    },
+    {
+      "type": "processes",
+      "keyColor": "#452e4f",
+    },
+    {
+      "type": "packages",
+      "keyColor": "#3a1f37",
+    },
+    {
+      "type": "display",
+      "keyColor": "#4d68c8",
+    },
+    {
+      "type": "wm",
+      "keyColor": "#6691f0",
+    },
+    {
+      "type": "gpu",
+      "keyColor": "#a4e4f8",
+    },
+    {
+      "type": "cpu",
+      "keyColor": "#6691f0",
+    },
+    {
+      "type": "memory",
+      "keyColor": "#4d68c8",
+    },
+    {
+      "type": "swap",
+      "keyColor": "#523c64",
+    },
+    {
+      "type": "disk",
+      "keyColor": "#9b394a",
+    },
+    {
+      "type": "media",
+      "keyColor": "red",
+    },
+    {
+      "type": "wifi",
+      "keyColor": "#2e0a0f",
+    },
+    {
+      "type": "custom",
+      "key": "Status",
+      "keyColor": "#2e0a0f",
+      "format": "Unemployed",
+    },
+  ]
+}
