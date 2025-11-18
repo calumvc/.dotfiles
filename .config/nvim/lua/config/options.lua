@@ -9,7 +9,7 @@ opt.number = true
 
 -- leader for keybinds and stuff
 vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+vim.g.maplocalleader = '\\'
 
 -- cmd stuff
 opt.title = true

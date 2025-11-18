@@ -16,11 +16,15 @@
           }
     },
     "custom/deadline":{
-      "exec": "echo \"$((316 - $(date +'%-j')))\" days left",
+      "exec": "echo \"dwl [ $((323 - $(date +'%-j')))\" days left ]",
+      "interval": 60
+    },
+    "custom/deadline2":{
+      "exec": "echo \"diss [ $((334 - $(date +'%-j')))\" days left ]",
       "interval": 60
     },
     "hyprland/window": {
-    "format": "[ {class} ]",
+    "format": " [ {class} ]",
     },
     "idle_inhibitor": {
         "format": "{icon}",

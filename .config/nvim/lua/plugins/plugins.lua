@@ -57,7 +57,7 @@ return {
       treesitter.setup({
         ensure_installed = {
           "c", "css", "gitignore", "graphql", "haskell",
-          "html", "javascript", "json", "lua", "markdown",
+          "html", "javascript", "json", "latex", "lua", "markdown",
           "php", "python", "sql", "tsx", "typescript", "vim"
         },
         sync_install = false,
@@ -116,6 +116,13 @@ return {
         },
       })
     end,
+  },
+  {
+    "lervag/vimtex",
+    lazy = false,
+    init = function()
+      vim.g.vimtex_view_method = "zathura"
+    end
   },
 
   {

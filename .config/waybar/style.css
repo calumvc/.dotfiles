@@ -45,8 +45,7 @@ window#waybar {
     padding: 0 10px;
     border-radius: 15px;
 }
-
-#clock:hover,
+#clock:hover, 
 #battery:hover,
 #cpu:hover,
 #memory:hover,
@@ -91,6 +90,9 @@ window#waybar {
 }
 
 #custom-deadline{
+  color: #ff3131;
+}
+#custom-deadline2{
   color: #ff3131;
 }
 #clock{

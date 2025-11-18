@@ -1,1 +1,1 @@
-![monado](./fastfetch/fastfetch.png)
+![dotfiles](dotfiles.png)

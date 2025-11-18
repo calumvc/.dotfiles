@@ -34,8 +34,7 @@ setopt hist_ignore_space
 
 # aliases
 alias hypr="nvim .config/hypr/hyprland.conf"
-alias dwl="nvim code/strath-dwl"
-alias ls="ls --color"
+alias ls="ls --color --group-directories-first"
 alias cd="z"
 
 compdef -d pacman

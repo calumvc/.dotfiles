@@ -8,7 +8,9 @@
     // Choose the order of the modules
     "modules-left": [
         "clock",
-        "hyprland/window"
+        "custom/deadline",
+        "custom/deadline2",
+        "hyprland/window",
     ],
     "modules-center": [
         "hyprland/workspaces"
@@ -19,7 +21,6 @@
         "memory",
         "temperature",
         "battery",
-        "custom/deadline",
         "network",
     ],
     //Modules configuration
