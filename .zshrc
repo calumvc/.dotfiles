@@ -36,7 +36,9 @@ setopt hist_ignore_space
 alias hypr="nvim .config/hypr/hyprland.conf"
 alias ls="ls --color --group-directories-first"
 alias cd="z"
+alias zat="zathura --fork"
 
 compdef -d pacman
+compdef -d npm
 
 eval "$(zoxide init zsh)"

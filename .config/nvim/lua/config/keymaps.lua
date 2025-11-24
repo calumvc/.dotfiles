@@ -27,3 +27,6 @@ keymap.set('n', '<C-e>', ':terminal<Return>')
 
 -- leave vim terminal
 keymap.set('n', '<C-space>', '<C-w>N')
+
+-- code actions
+keymap.set('n', '<leader>c', vim.lsp.buf.code_action)

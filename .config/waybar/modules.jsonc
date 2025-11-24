@@ -16,11 +16,12 @@
           }
     },
     "custom/deadline":{
-      "exec": "echo \"dwl [ $((323 - $(date +'%-j')))\" days left ]",
+      "exec": "echo swl [ ? days left ]",
+      // "exec": "echo \"swl [ $((323 - $(date +'%-j')))\" days left ]",
       "interval": 60
     },
     "custom/deadline2":{
-      "exec": "echo \"diss [ $((334 - $(date +'%-j')))\" days left ]",
+      "exec": "echo \"diss [ $((336 - $(date +'%-j')))\" days left ]",
       "interval": 60
     },
     "hyprland/window": {

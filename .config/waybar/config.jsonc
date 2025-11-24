@@ -8,8 +8,8 @@
     // Choose the order of the modules
     "modules-left": [
         "clock",
-        "custom/deadline",
         "custom/deadline2",
+        "custom/deadline",
         "hyprland/window",
     ],
     "modules-center": [
@@ -26,6 +26,6 @@
     //Modules configuration
 
     "include": [
-		"~/.config/waybar/modules.json"
+		"~/.config/waybar/modules.jsonc"
 	]
 }
