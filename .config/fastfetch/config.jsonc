@@ -85,7 +85,7 @@
       "type": "custom",
       "key": "Status",
       "keyColor": "#2e0a0f",
-      "format": "Unemployed",
+      "format": "Student",
     },
   ]
 }
