@@ -36,7 +36,7 @@ alias hypr="nvim .config/hypr/hyprland.conf"
 alias ls="ls --color --group-directories-first"
 alias cd="z"
 alias zat="zathura --fork"
-alias todo="taskell todo.md"
+alias todo="taskell .todo.md"
 
 compdef -d pacman
 compdef -d npm

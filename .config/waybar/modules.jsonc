@@ -21,7 +21,11 @@
       "interval": 60
     },
     "custom/deadline2":{
-      "exec": "echo \"diss [ $((334 - $(date +'%-j')))\" days left ]",
+      "exec": "echo \"cs407 [ $((341- $(date +'%-j')))\" days left ]",
+      "interval": 60
+    },
+    "custom/deadline3":{
+      "exec": "echo \"VITEC [ $((338- $(date +'%-j')))\" days left ]",
       "interval": 60
     },
     "hyprland/window": {
