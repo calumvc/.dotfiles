@@ -1,0 +1,17 @@
+profile docked {
+  output eDP-1 disable
+  output DP-5 enable mode 2560x1440@119.99800 position 0,0
+  output DP-6 enable
+}
+
+profile undocked {
+  output eDP-1 enable
+  output $TELLY enable
+}
+
+output "Toshiba America Info Systems Inc 43UHD_LCD_TV Unknown" {
+  mode 3840x2160@60.000000
+  position 0,0
+  scale 2
+  alias $TELLY
+}

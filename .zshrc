@@ -36,7 +36,9 @@ alias hypr="nvim .config/hypr/hyprland.conf"
 alias ls="ls --color --group-directories-first"
 alias cd="z"
 alias zat="zathura --fork"
-alias todo="taskell .todo.md"
+alias todo="taskell ~/.todo.md"
+alias shade="hyprshade on blue-light-filter"
+alias joke="curl https://v2.jokeapi.dev/joke/Programming -s | jq ".joke" | cowsay | lolcat"
 
 compdef -d pacman
 compdef -d npm

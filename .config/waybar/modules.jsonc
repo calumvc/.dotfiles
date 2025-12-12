@@ -21,7 +21,7 @@
       "interval": 60
     },
     "custom/deadline2":{
-      "exec": "echo \"cs407 [ $((341- $(date +'%-j')))\" days left ]",
+      "exec": "echo \"cs409 [ $((346- $(date +'%-j')))\" days left ]",
       "interval": 60
     },
     "custom/deadline3":{
