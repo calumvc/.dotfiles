@@ -63,7 +63,7 @@ return {
     'nvim-treesitter/nvim-treesitter',
     build = ":TSUpdate",
     config = function()
-      local treesitter = require("nvim-treesitter.configs")
+      local treesitter = require("nvim-treesitter")
       treesitter.setup({
         ensure_installed = {
           "c",
@@ -92,11 +92,11 @@ return {
     end,
   },
 
-  { 'wadackel/vim-dogrun',
+  { 'thesimonho/kanagawa-paper.nvim',
     config = function()
       -- theme
       vim.opt.background = "dark"
-      vim.cmd("colorscheme dogrun")
+      vim.cmd("colorscheme kanagawa-paper")
     end,
   },
   { 'nvim-lua/plenary.nvim' },
