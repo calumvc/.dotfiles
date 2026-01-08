@@ -43,9 +43,12 @@ alias ls="ls --color --group-directories-first"
 alias cd="z"
 alias zat="zathura --fork"
 alias todo="taskell ~/.todo.md"
+alias tod="taskell .todo.md"
 alias shade="hyprshade on blue-light-filter"
 alias noshade="hyprshade off"
 alias joke="curl https://v2.jokeapi.dev/joke/Programming -s | jq ".joke" | cowsay | lolcat"
+alias py="python"
+alias swl="cd swl && sudo systemctl start docker && docker start dwl-mysql && npm run dev"
 
 compdef -d pacman
 compdef -d npm

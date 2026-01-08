@@ -9,7 +9,7 @@
     "modules-left": [
         "clock",
         // "custom/deadline3",
-        // "custom/deadline2",
+        "custom/deadline2",
         "custom/deadline",
         "hyprland/window",
     ],
