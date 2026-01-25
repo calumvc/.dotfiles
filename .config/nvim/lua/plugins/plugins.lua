@@ -12,18 +12,22 @@ return {
 
       require("mason-lspconfig").setup({
         ensure_installed = {
+          "bashls",
+          "clangd",
           "cssls",
+          "dockerls",
           "emmet_ls",
           "eslint",
           "gopls",
-          "graphql",
           "hls",
           "html",
           "ltex_plus",
           "lua_ls",
+          "prismals",
           "pyright",
           "tailwindcss",
           "vtsls",
+          "yamlls",
         },
         automatic_installation = true,
       })
@@ -66,11 +70,12 @@ return {
       local treesitter = require("nvim-treesitter")
       treesitter.setup({
         ensure_installed = {
+          "bash",
           "c",
           "css",
+          "dockerfile",
           "gitignore",
           "go",
-          "graphql",
           "haskell",
           "html",
           "javascript",
@@ -79,11 +84,13 @@ return {
           "lua",
           "markdown",
           "php",
+          "prisma",
           "python",
           "sql",
           "tsx",
           "typescript",
-          "vim"
+          "vim",
+          "yaml",
         },
         sync_install = false,
         auto_install = true,

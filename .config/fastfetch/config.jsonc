@@ -17,75 +17,75 @@
     "separator",
     {
       "type": "os",
-      "keyColor": "#2e0a0f",
+      "keyColor": "#9b394a",
     },
     {
       "type": "command",
-      "key": "OS Age",
-      "keyColor": "#2e0a0f",
+      "key": "System Age",
+      "keyColor": "#9b394a",
       "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
     },
     {
-      "type": "host",
+      "type": "custom",
+      "key": "Status",
       "keyColor": "#9b394a",
-    },
-    {
-      "type": "kernel",
-      "keyColor": "#9b394a",
+      "format": "Student",
     },
     {
       "type": "uptime",
-      "keyColor": "#523c64",
+      "keyColor": "#9b394a",
     },
     {
       "type": "processes",
-      "keyColor": "#452e4f",
+      "keyColor": "#523c64",
     },
     {
       "type": "packages",
+      "keyColor": "#452e4f",
+    },
+    {
+      "type": "kernel",
       "keyColor": "#3a1f37",
     },
     {
-      "type": "display",
+      "type": "wm",
       "keyColor": "#4d68c8",
     },
     {
-      "type": "wm",
+      "type": "host",
       "keyColor": "#6691f0",
     },
     {
-      "type": "gpu",
+      "type": "display",
       "keyColor": "#a4e4f8",
     },
     {
       "type": "cpu",
+      "keyColor": "#a4e4f8",
+    },
+    {
+      "type": "gpu",
       "keyColor": "#6691f0",
     },
     {
-      "type": "memory",
-      "keyColor": "#4d68c8",
+      "type": "wifi",
+      "keyColor": "#523c64",
     },
     {
-      "type": "swap",
-      "keyColor": "#523c64",
+      "type": "media",
+      "keyColor": "#9b394a",
     },
     {
       "type": "disk",
       "keyColor": "#9b394a",
     },
     {
-      "type": "media",
-      "keyColor": "#2e0a0f",
+      "type": "memory",
+      "keyColor": "#9b394a",
     },
     {
-      "type": "wifi",
-      "keyColor": "#2e0a0f",
-    },
-    {
-      "type": "custom",
-      "key": "Status",
-      "keyColor": "#2e0a0f",
-      "format": "Student",
+      "type": "swap",
+      "keyColor": "#9b394a",
     },
   ]
 }

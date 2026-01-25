@@ -37,6 +37,9 @@ setopt hist_ignore_dups
 setopt hist_find_no_dups
 setopt hist_ignore_space
 
+export VISUAL=vim
+export EDITOR=vim
+
 # aliases
 alias hypr="nvim .config/hypr/hyprland.conf"
 alias ls="ls --color --group-directories-first"
@@ -49,8 +52,12 @@ alias noshade="hyprshade off"
 alias joke="curl https://v2.jokeapi.dev/joke/Programming -s | jq ".joke" | cowsay | lolcat"
 alias py="python"
 alias swl="cd swl && sudo systemctl start docker && docker start dwl-mysql && npm run dev"
+alias wk="gcalcli calw"
+alias mth="gcalcli calm"
+alias cal="cat ~/.gcal_cache"
 
 compdef -d pacman
 compdef -d npm
 
+eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"

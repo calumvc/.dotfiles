@@ -15,3 +15,10 @@ output "Toshiba America Info Systems Inc 43UHD_LCD_TV Unknown" {
   scale 2
   alias $TELLY
 }
+
+output "Iiyama North America PL8612U" {
+  mode 3840x2160@60.000000
+  position 0,0
+  scale 4
+  alias $BIGSCREEN
+}

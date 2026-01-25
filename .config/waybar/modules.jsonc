@@ -21,7 +21,7 @@
       "interval": 60
     },
     "custom/deadline2":{
-      "exec": "echo \"diss [ $((15 - $(date +'%-j')))\" days left ]",
+      "exec": "echo \"diss [ $((90 - $(date +'%-j')))\" days left ]",
       "interval": 60
     },
     "custom/deadline3":{
