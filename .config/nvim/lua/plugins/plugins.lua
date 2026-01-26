@@ -65,10 +65,11 @@ return {
 
   {
     'nvim-treesitter/nvim-treesitter',
+    branch = "master",
     build = ":TSUpdate",
     config = function()
-      local treesitter = require("nvim-treesitter")
-      treesitter.setup({
+
+      require("nvim-treesitter.configs").setup({
         ensure_installed = {
           "bash",
           "c",
@@ -94,16 +95,17 @@ return {
         },
         sync_install = false,
         auto_install = true,
-        highlight = { enable = true },
+        highlight = { enable = true, additional_vim_regex_highlighting = false },
       })
+
     end,
   },
 
-  { 'thesimonho/kanagawa-paper.nvim',
+  { 'ficcdaf/ashen.nvim',
     config = function()
       -- theme
       vim.opt.background = "dark"
-      vim.cmd("colorscheme kanagawa-paper")
+      vim.cmd("colorscheme ashen")
     end,
   },
   { 'nvim-lua/plenary.nvim' },

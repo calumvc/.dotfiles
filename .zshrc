@@ -1,7 +1,7 @@
 
 # onefetch if in repository else fastfetch
 if git rev-parse --git-dir > /dev/null 2>&1; then
-	onefetch
+	onefetch --include-hidden
 else
 	fastfetch
 fi
@@ -55,6 +55,7 @@ alias swl="cd swl && sudo systemctl start docker && docker start dwl-mysql && np
 alias wk="gcalcli calw"
 alias mth="gcalcli calm"
 alias cal="cat ~/.gcal_cache"
+alias ucal="~/.config/scripts/gcal.sh"
 
 compdef -d pacman
 compdef -d npm
