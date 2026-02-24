@@ -25,7 +25,7 @@
       "interval": 60
     },
     "custom/deadline3":{
-      "exec": "echo \"VITEC [ $((338- $(date +'%-j')))\" days left ]",
+      "exec": "echo \"graduate [ $((175 - $(date +'%-j')))\" days left ]",
       "interval": 60
     },
     "hyprland/window": {

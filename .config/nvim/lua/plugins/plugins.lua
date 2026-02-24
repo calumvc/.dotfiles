@@ -1,8 +1,8 @@
+
 return {
 
 -- lsp
-  {
-    'williamboman/mason.nvim',
+  { 'williamboman/mason.nvim',
     dependencies = {
       'williamboman/mason-lspconfig.nvim',
       'neovim/nvim-lspconfig',
@@ -101,11 +101,14 @@ return {
     end,
   },
 
-  { 'ficcdaf/ashen.nvim',
+  { 'drewxs/ash.nvim',
     config = function()
       -- theme
       vim.opt.background = "dark"
-      vim.cmd("colorscheme ashen")
+      vim.cmd("colorscheme ash")
+      vim.api.nvim_set_hl(0, "IblScope", { fg = "#9db89c" })
+      vim.api.nvim_set_hl(0, "TodoSignTODO", { fg = "#9db89c" })
+      vim.api.nvim_set_hl(0, "TodoBgTODO", { fg = "#636778", bg = "#9db89c" })
     end,
   },
   { 'nvim-lua/plenary.nvim' },
@@ -158,7 +161,17 @@ return {
       vim.g.vimtex_view_method = "zathura"
     end
   },
-
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    ---@module "ibl"
+    ---@type ibl.config
+    opts = {
+      exclude = {
+        filetypes = { "dashboard" },
+      },
+    }, 
+  },
   {
     'sphamba/smear-cursor.nvim',
     config = function()

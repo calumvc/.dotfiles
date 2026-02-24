@@ -12,13 +12,12 @@
     "break",
     {
       "type": "title",
-      "keyColor": "2",
-    },
-    "separator",
-    {
-      "type": "os",
       "keyColor": "#9b394a",
     },
+    "separator",
+    "break",
+    "break",
+    "break",
     {
       "type": "command",
       "key": "System Age",
@@ -26,66 +25,59 @@
       "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
     },
     {
-      "type": "custom",
-      "key": "Status",
+      "type": "host",
       "keyColor": "#9b394a",
-      "format": "Student",
     },
+    // {
+    //   "type": "custom",
+    //   "key": "Status",
+    //   "keyColor": "#9b394a",
+    //   "format": "Student",
+    // },
     {
       "type": "uptime",
-      "keyColor": "#9b394a",
+      "keyColor": "#523c64",
+      // "keyColor": "#9b394a",
     },
     {
       "type": "processes",
-      "keyColor": "#523c64",
-    },
-    {
-      "type": "packages",
       "keyColor": "#452e4f",
-    },
-    {
-      "type": "kernel",
-      "keyColor": "#3a1f37",
     },
     {
       "type": "wm",
       "keyColor": "#4d68c8",
     },
     {
-      "type": "host",
-      "keyColor": "#6691f0",
-    },
-    {
-      "type": "display",
-      "keyColor": "#a4e4f8",
-    },
-    {
       "type": "cpu",
-      "keyColor": "#a4e4f8",
+      "keyColor": "#6691f0",
     },
     {
       "type": "gpu",
+      "keyColor": "#a4e4f8",
+    },
+    // {
+    //   "type": "media",
+    //   "keyColor": "#523c64",
+    // },
+    {
+      "type": "memory",
       "keyColor": "#6691f0",
     },
     {
-      "type": "wifi",
-      "keyColor": "#523c64",
-    },
-    {
-      "type": "media",
-      "keyColor": "#9b394a",
+      "type": "packages",
+      "keyColor": "#4d68c8",
     },
     {
       "type": "disk",
       "keyColor": "#9b394a",
     },
     {
-      "type": "memory",
+      "type": "kernel",
       "keyColor": "#9b394a",
     },
-    {
-      "type": "swap",
-      "keyColor": "#9b394a",
-    },
+    // {
+    //   "type": "display",
+    //   "keyColor": "#9b394a",
+    // },
   ]
 }

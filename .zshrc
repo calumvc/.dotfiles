@@ -51,11 +51,13 @@ alias shade="hyprshade on blue-light-filter"
 alias noshade="hyprshade off"
 alias joke="curl https://v2.jokeapi.dev/joke/Programming -s | jq ".joke" | cowsay | lolcat"
 alias py="python"
-alias swl="cd swl && sudo systemctl start docker && docker start dwl-mysql && npm run dev"
+alias swl="cd swl && sudo systemctl start docker && docker start dwl-mysql && bun --bun dev"
 alias wk="gcalcli calw"
 alias mth="gcalcli calm"
 alias cal="cat ~/.gcal_cache"
 alias ucal="~/.config/scripts/gcal.sh"
+alias onefetch="onefetch --include-hidden"
+alias aes="~/code/.aesara-dev/bin/python"
 
 compdef -d pacman
 compdef -d npm
