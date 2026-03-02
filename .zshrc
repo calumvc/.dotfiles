@@ -58,6 +58,7 @@ alias cal="cat ~/.gcal_cache"
 alias ucal="~/.config/scripts/gcal.sh"
 alias onefetch="onefetch --include-hidden"
 alias aes="~/code/.aesara-dev/bin/python"
+alias bluetooth="sudo systemctl start bluetooth.service"
 
 compdef -d pacman
 compdef -d npm

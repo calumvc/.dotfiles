@@ -46,6 +46,11 @@ return {
   },
 
   { 'nvim-tree/nvim-web-devicons' },
+  { 'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    config = true
+
+  },
 
   {
     'nvim-lualine/lualine.nvim',

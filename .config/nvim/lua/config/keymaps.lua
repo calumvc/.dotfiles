@@ -22,8 +22,10 @@ keymap.set('n', '<leader>h', ':nohlsearch<Return>')
 -- shut window
 keymap.set('n', '<leader>q', ':q<Return>')
 
--- leave vim terminal
-keymap.set('n', '<C-space>', '<C-w>N')
-
 -- code actions
 keymap.set('n', '<leader>c', vim.lsp.buf.code_action)
+
+-- telescope
+keymap.set("n", "<Leader>ff", ":Telescope find_files<Return>")
+keymap.set("n", "<Leader>fr", ":Telescope oldfiles<Return>")
+keymap.set("n", "<Leader>fs", ":Telescope live_grep<Return>")
