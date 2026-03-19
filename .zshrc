@@ -39,9 +39,10 @@ setopt hist_ignore_space
 
 export VISUAL=vim
 export EDITOR=vim
+export TERM=xterm
 
 # aliases
-alias hypr="nvim .config/hypr/hyprland.conf"
+alias hypr="nv .config/hypr/hyprland.conf"
 alias ls="ls --color --group-directories-first"
 alias cd="z"
 alias zat="zathura --fork"
@@ -59,6 +60,8 @@ alias ucal="~/.config/scripts/gcal.sh"
 alias onefetch="onefetch --include-hidden"
 alias aes="~/code/.aesara-dev/bin/python"
 alias bluetooth="sudo systemctl start bluetooth.service"
+alias brightness="sudo vim /sys/class/backlight/intel_backlight/brightness"
+alias nv="nvim"
 
 compdef -d pacman
 compdef -d npm
