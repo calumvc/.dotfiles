@@ -17,16 +17,16 @@
           }
     },
     "custom/deadline":{
-      "exec": "echo swl [ ? days left ]",
+      "exec": "echo swl [ ! days left ]",
       // "exec": "echo \"swl [ $((323 - $(date +'%-j')))\" days left ]",
       "interval": 60
     },
-    "custom/deadline2":{
-      "exec": "echo \"diss [ $((90 - $(date +'%-j')))\" days left ]",
-      "interval": 60
-    },
+    // "custom/deadline2":{
+    //   "exec": "echo \"Freedom [ $((121 - $(date +'%-j')))\" day left ]",
+    //   "interval": 60
+    // },
     "custom/deadline3":{
-      "exec": "echo \"graduate [ $((175 - $(date +'%-j')))\" days left ]",
+      "exec": "echo \"Graduate [ $((175 - $(date +'%-j')))\" days left ]",
       "interval": 60
     },
     "hyprland/window": {

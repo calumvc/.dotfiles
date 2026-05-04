@@ -59,9 +59,12 @@ alias cal="cat ~/.gcal_cache"
 alias ucal="~/.config/scripts/gcal.sh"
 alias onefetch="onefetch --include-hidden"
 alias aes="~/code/.aesara-dev/bin/python"
-alias bluetooth="sudo systemctl start bluetooth.service"
-alias brightness="sudo vim /sys/class/backlight/intel_backlight/brightness"
+alias bt="sudo systemctl start bluetooth.service"
+alias bn="sudo vim /sys/class/backlight/intel_backlight/brightness"
 alias nv="nvim"
+alias fix="hyprctl --instance 0 'keyword misc:allow_session_lock_restore 1' && hyprctl --instance 0 'dispatch exec swaylock' && exit"
+alias sys="sudo systemctl"
+alias td="taskell .today.md"
 
 compdef -d pacman
 compdef -d npm

@@ -17,8 +17,7 @@ window#waybar {
 }
 .modules-left {
     margin: 3px 2px;
-    padding: 0 5px;
-    border-radius: 15px;
+    padding: 0 5px; border-radius: 15px;
 }
 .modules-center {
     padding: 0 0;
@@ -90,10 +89,10 @@ window#waybar {
 }
 
 #custom-deadline{
-  color: #31ff31;
+  color: #ffff00;
 }
 #custom-deadline2{
-  color: #ff3131;
+  color: #ffff00;
 }
 #custom-deadline3{
   color: #00a6ff;

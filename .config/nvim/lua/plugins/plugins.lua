@@ -31,6 +31,7 @@ return {
         },
         automatic_installation = true,
       })
+
     end,
   },
 
@@ -70,16 +71,18 @@ return {
 
   {
     'nvim-treesitter/nvim-treesitter',
-    branch = "master",
+    branch = "main",
     build = ":TSUpdate",
     config = function()
 
-      require("nvim-treesitter.configs").setup({
+      require("nvim-treesitter").setup({
         ensure_installed = {
           "bash",
           "c",
           "css",
           "dockerfile",
+          "gitattributes",
+          "gitcommit",
           "gitignore",
           "go",
           "haskell",
@@ -89,6 +92,7 @@ return {
           "latex",
           "lua",
           "markdown",
+          "nginx",
           "php",
           "prisma",
           "python",
@@ -98,9 +102,11 @@ return {
           "vim",
           "yaml",
         },
-        sync_install = false,
         auto_install = true,
-        highlight = { enable = true, additional_vim_regex_highlighting = false },
+      })
+
+      vim.api.nvim_create_autocmd("FileType", {
+        callback = function() pcall(vim.treesitter.start) end,
       })
 
     end,
@@ -117,7 +123,18 @@ return {
     end,
   },
   { 'nvim-lua/plenary.nvim' },
-  { 'nvim-telescope/telescope.nvim' },
+  { 'nvim-telescope/telescope.nvim',
+    opts = {
+      defaults = {
+        mappings = {
+          i = {
+            ["<C-j>"] = "move_selection_next",
+            ["<C-k>"] = "move_selection_previous",
+          },
+        },
+      },
+    },
+  },
 
   {
     "folke/todo-comments.nvim",
@@ -125,7 +142,6 @@ return {
     opts = {
     }
   },
-
 
   -- completion
 

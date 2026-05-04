@@ -24,8 +24,10 @@ keymap.set('n', '<leader>q', ':q<Return>')
 
 -- code actions
 keymap.set('n', '<leader>c', vim.lsp.buf.code_action)
+vim.api.nvim_set_keymap("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
 
 -- telescope
-keymap.set("n", "<Leader>ff", ":Telescope find_files<Return>")
-keymap.set("n", "<Leader>fr", ":Telescope oldfiles<Return>")
-keymap.set("n", "<Leader>fs", ":Telescope live_grep<Return>")
+keymap.set("n", "<Leader>fu", ":Telescope find_files<Return>")
+keymap.set("n", "<Leader>fo", ":Telescope oldfiles<Return>")
+keymap.set("n", "<Leader>fi", ":Telescope live_grep<Return>")

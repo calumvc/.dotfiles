@@ -496,4 +496,12 @@
 #    appname = "some_volume_notifiers"
 #    set_stack_tag = "volume"
 #
+[suppress_claude]
+    appname = "Claude Code"
+    skip_display = true
+
 # vim: ft=cfg
+#
+[suppress_kitty]
+    appname = "kitty"
+    skip_display = true

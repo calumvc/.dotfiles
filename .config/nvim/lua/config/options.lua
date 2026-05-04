@@ -36,6 +36,9 @@ opt.wrap = false
 opt.ignorecase = true
 opt.smartcase = true
 
+-- turn off mouse
+opt.mouse = ""
+
 local signs = { Error = "E", Warn = "W", Hint = "H", Info = "I" }
 vim.diagnostic.config({
   signs = {
