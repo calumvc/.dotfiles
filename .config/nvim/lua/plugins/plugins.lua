@@ -185,13 +185,12 @@ return {
   {
     "lukas-reineke/indent-blankline.nvim",
     main = "ibl",
-    ---@module "ibl"
-    ---@type ibl.config
-    opts = {
-      exclude = {
-        filetypes = { "dashboard" },
-      },
-    }, 
+    config = function()
+      require("ibl").setup({
+        exclude = { filetypes = { "dashboard" } },
+      })
+      vim.api.nvim_set_hl(0, "IblScope", { fg = "#9db89c" })
+    end,
   },
   {
     'sphamba/smear-cursor.nvim',

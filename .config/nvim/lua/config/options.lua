@@ -53,3 +53,5 @@ vim.diagnostic.config({
     current_line = false,
   },
 })
+
+opt.backupcopy = "yes"

@@ -27,6 +27,8 @@ keymap.set('n', '<leader>c', vim.lsp.buf.code_action)
 vim.api.nvim_set_keymap("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
 
+keymap.set("n", "<leader>d", vim.diagnostic.open_float, { desc = "Show diagnostic " })
+
 -- telescope
 keymap.set("n", "<Leader>fu", ":Telescope find_files<Return>")
 keymap.set("n", "<Leader>fo", ":Telescope oldfiles<Return>")

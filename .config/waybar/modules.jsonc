@@ -16,19 +16,19 @@
             "*": [ 1, 2, 3, 4, 5, 6, 7 ]
           }
     },
-    "custom/deadline":{
-      "exec": "echo swl [ ! days left ]",
-      // "exec": "echo \"swl [ $((323 - $(date +'%-j')))\" days left ]",
-      "interval": 60
-    },
+    // "custom/deadline":{
+    //   // "exec": "echo swl [  days left ]",
+    //   "exec": "echo \"swl [ $((161 - $(date +'%-j')))\" days left ]",
+    //   "interval": 60
+    // },
     // "custom/deadline2":{
     //   "exec": "echo \"Freedom [ $((121 - $(date +'%-j')))\" day left ]",
     //   "interval": 60
     // },
-    "custom/deadline3":{
-      "exec": "echo \"Graduate [ $((175 - $(date +'%-j')))\" days left ]",
-      "interval": 60
-    },
+    // "custom/deadline3":{
+    //   "exec": "echo \"Work [ $((256 - $(date +'%-j')))\" days left ]",
+    //   "interval": 60
+    // },
     "hyprland/window": {
     "format": " [ {class} ]",
     },
